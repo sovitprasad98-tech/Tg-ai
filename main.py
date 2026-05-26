@@ -8,7 +8,7 @@ logging.basicConfig(format='%(asctime)s - %(levelname)s - %(message)s', level=lo
 logger = logging.getLogger(__name__)
 
 # ===================== CONFIG =====================
-BOT_TOKEN    = "8201680683:AAEWQwNfv66IPpGydD6kksp9TMug7D9dDQM"
+BOT_TOKEN    = "8600723357:AAHsQYZmRdY8_yfnt2uKQZPMgctFcUuX8OI"
 SAMBA_KEY    = "242f3619-d20e-4f47-b242-4d1b5b6703ac"
 OWNER_ID     = 8589416528
 WEBHOOK_URL = "https://tg-ai-9tpp.vercel.app/webhook"
