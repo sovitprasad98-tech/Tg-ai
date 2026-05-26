@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 BOT_TOKEN    = "8201680683:AAEWQwNfv66IPpGydD6kksp9TMug7D9dDQM"
 SAMBA_KEY    = "242f3619-d20e-4f47-b242-4d1b5b6703ac"
 OWNER_ID     = 8589416528
-WEBHOOK_URL  = "https://your-app.vercel.app/webhook"  # ← Vercel URL daalo yahan
+WEBHOOK_URL = "https://tg-ai-9tpp.vercel.app/webhook"
 
 SAMBA_URL    = "https://cloud.sambanova.ai/api/v1/chat/completions"
 SAMBA_MODEL  = "Meta-Llama-3.1-8B-Instruct"
