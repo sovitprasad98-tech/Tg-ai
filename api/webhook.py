@@ -1,10 +1,8 @@
-
 from http.server import BaseHTTPRequestHandler
-import sys, os, json, telebot
+import sys, os, telebot
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from main import bot, setup_webhook
-
+from main import bot, setup_webhook, startup_log
 
 class handler(BaseHTTPRequestHandler):
 
@@ -18,8 +16,11 @@ class handler(BaseHTTPRequestHandler):
         self.wfile.write(b'ok')
 
     def do_GET(self):
-        # Pehli baar URL visit karo — webhook set ho jayega automatically
         setup_webhook()
+        startup_log()
         self.send_response(200)
         self.end_headers()
-        self.wfile.write(b'Raju Bot is alive! Webhook set ho gaya!')
+        self.wfile.write(b'Raju Bot is alive!')
+
+    def log_message(self, format, *args):
+        pass
